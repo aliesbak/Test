@@ -1,0 +1,69 @@
+# Author: Ali Esbak
+# Date: 6/1/2021
+
+alterState:
+  alter: True
+  basePath_LabView_Scopes: ''
+  broadcastMessage: False
+  
+# Labview Client portion - ideally part of a bigger configuration file 
+LabViewClients:
+  1:
+    name: PI3_TCP_LV_Client
+    databases: 1
+    address: 172.25.226.222
+    ConnectedDevices:
+      # Armable scopes - Downloadable scopes
+      Scopes:
+        1:
+          name: polarimeter_01
+          type: visa_lecroy
+          connectionString: "TCPIP0::172.25.226.126::inst0::INSTR"
+          timeDiv(s): 500E-9
+          memSize: 140E3
+          triggerType: External
+          triggerLevel: 12
+          activeChannels:
+            - 1
+          ChannelSettings:
+            1:
+              vdiv(v): 10
+              offset: 0
+            2:
+              vdiv(v): 5
+              offset: 0
+            3:
+              vdiv(v): 20
+              offset: 0
+Databases:
+  1:
+    name: plasmaInjector_3
+    host: 172.30.5.1
+    port: 3307
+    password: 123
+    tables:
+      - capbank_alarms_events:
+        - event_id
+        - timeStamp
+        - client
+        - sensor
+        - alarm
+      - capbank_fault_detection:
+        - event_id
+        - timeStamp
+        - client
+        - sensor
+        - event
+        - stae
+      - events:
+        - event_id
+        - timeStamp
+        - name
+        - description
+      - tag_history:
+        - tag_id
+        - timeStamp
+        - name
+        - value
+        - status
+
