@@ -36,6 +36,15 @@ LabViewClients:
             3:
               vdiv(v): 20
               offset: 0
+  2:
+    name: PI3_TCP_LV_Client
+    databases: 1
+    address: 172.25.226.222
+    savePath: '\\polaris\PI3 Data'
+    ConnectedDevices:
+      # Armable scopes - Downloadable scopes
+      Scopes: None
+
 Databases:
   1:
     name: plasmaInjector_3
