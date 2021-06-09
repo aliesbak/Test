@@ -14,7 +14,7 @@ LabViewClients:
     databases: 1
     connectionString: 172.25.226.222
     savePath: '\\polaris\PI3 Data'
-    ConnectedDevices:
+    connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes:
         1:
@@ -43,7 +43,7 @@ LabViewClients:
     databases: 1
     connectionString: 172.25.226.222
     savePath: '\\polaris\PI3 Data'
-    ConnectedDevices:
+    connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes: None
 
