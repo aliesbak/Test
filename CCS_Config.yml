@@ -12,6 +12,7 @@ LabViewClients:
     name: PI3_TCP_LV_Client
     databases: 1
     address: 172.25.226.222
+    savePath: '\\polaris\PI3 Data'
     ConnectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes:
