@@ -11,6 +11,7 @@ LabViewClients:
   1:
     name: PI3_TCP_LV_Client
     active: True
+    type: labView
     databases: 1
     connectionString: 172.25.226.222
     savePath: '\\polaris\PI3 Data'
@@ -40,6 +41,7 @@ LabViewClients:
   2:
     name: Puff_Valve_Client
     active: False
+    type: labView
     databases: 1
     connectionString: 172.25.226.222
     savePath: '\\polaris\PI3 Data'
