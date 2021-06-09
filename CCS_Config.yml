@@ -36,35 +36,35 @@ LabViewClients:
             3:
               vdiv(v): 20
               offset: 0
-    Databases:
-      1:
-        name: plasmaInjector_3
-        host: 172.30.5.1
-        port: 3307
-        password: 123
-        tables:
-          - capbank_alarms_events:
-            - event_id
-            - timeStamp
-            - client
-            - sensor
-            - alarm
-          - capbank_fault_detection:
-            - event_id
-            - timeStamp
-            - client
-            - sensor
-            - event
-            - stae
-          - events:
-            - event_id
-            - timeStamp
-            - name
-            - description
-          - tag_history:
-            - tag_id
-            - timeStamp
-            - name
-            - value
-            - status
+Databases:
+  1:
+    name: plasmaInjector_3
+    host: 172.30.5.1
+    port: 3307
+    password: 123
+    tables:
+      - capbank_alarms_events:
+        - event_id
+        - timeStamp
+        - client
+        - sensor
+        - alarm
+      - capbank_fault_detection:
+        - event_id
+        - timeStamp
+        - client
+        - sensor
+        - event
+        - stae
+      - events:
+        - event_id
+        - timeStamp
+        - name
+        - description
+      - tag_history:
+        - tag_id
+        - timeStamp
+        - name
+        - value
+        - status
 
