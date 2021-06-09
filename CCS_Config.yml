@@ -45,7 +45,7 @@ LabViewClients:
     savePath: '\\polaris\PI3 Data'
     connectedDevices:
       # Armable scopes - Downloadable scopes
-      Scopes: None
+      Scopes: Null
 
 Databases:
   1:
