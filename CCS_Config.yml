@@ -10,6 +10,7 @@ alterState:
 LabViewClients:
   1:
     name: PI3_TCP_LV_Client
+    active: True
     databases: 1
     address: 172.25.226.222
     savePath: '\\polaris\PI3 Data'
@@ -37,7 +38,8 @@ LabViewClients:
               vdiv(v): 20
               offset: 0
   2:
-    name: PI3_TCP_LV_Client
+    name: Puff_Valve_Client
+    active: False
     databases: 1
     address: 172.25.226.222
     savePath: '\\polaris\PI3 Data'
