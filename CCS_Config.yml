@@ -2,7 +2,7 @@
 # Date: 6/1/2021
 
 alterState:
-  alter: True
+  alter: Flase
   basePath_LabView_Scopes: ''
   broadcastMessage: False
   
