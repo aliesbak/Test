@@ -10,7 +10,7 @@ alterState:
 LabViewClients:
   1:
     name: PI3_TCP_LV_Client
-    active: False
+    active: True
     type: labView
     databases: 1
     connectionString: 172.25.226.222
@@ -40,7 +40,7 @@ LabViewClients:
               offset: 0
   2:
     name: Puff_Valve_Client
-    active: False
+    active: True
     type: labView
     databases: 1
     connectionString: 172.25.226.222
@@ -51,7 +51,7 @@ LabViewClients:
 
 Databases:
   1:
-    name: plasmaInjector_4
+    name: plasmaInjector_3
     host: 172.30.5.1
     port: 3307
     password: 123
