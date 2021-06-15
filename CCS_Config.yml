@@ -28,6 +28,8 @@ LabViewClients:
           triggerLevel: 12
           activeChannels:
             - 1
+            - 2
+            - 3
           ChannelSettings:
             1:
               vdiv(v): 10
