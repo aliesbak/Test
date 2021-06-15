@@ -28,6 +28,8 @@ LabViewClients:
           triggerLevel: 12
           activeChannels:
             - 1
+            - 2
+            - 3
           ChannelSettings:
             1:
               vdiv(v): 10
@@ -52,9 +54,10 @@ LabViewClients:
 Databases:
   1:
     name: plasmaInjector_3
+    user: root
+    password: 123
     host: 172.30.5.1
     port: 3307
-    password: 123
     tables:
       - capbank_alarms_events:
         - event_id
