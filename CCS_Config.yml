@@ -22,7 +22,7 @@ LabViewClients:
           name: polarimeter_01
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.126::inst0::INSTR"
-          timeDiv(s): 50MS
+          timeDiv(s): 500MS
           memSize: 700k
           triggerType: External
           triggerLevel: 12
