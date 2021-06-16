@@ -32,7 +32,7 @@ LabViewClients:
             - 3
           ChannelSettings:
             1:
-              name: chord 123
+              name: 123 44 55
               vdiv(v): 10
               offset: 0
             2:
