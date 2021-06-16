@@ -27,7 +27,7 @@ LabViewClients:
             # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
             # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
             # '1S','2S','5S','10S','20S','50S','100S']
-          timeDiv(s): 50NS
+          timeDiv(s): 100NS
           memSize: 70k
           triggerType: External
           triggerLevel: 12
@@ -37,7 +37,7 @@ LabViewClients:
             - 3
           ChannelSettings:
             1:
-              name: 123 44 55
+              name: check it 222
               vdiv(v): 10
               offset: 0
             2:
