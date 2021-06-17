@@ -46,7 +46,7 @@ LabViewClients:
               offset: 0
             3:
               name: Todd's Great
-              vdiv(v): 33
+              vdiv(v): 44
               offset: 0
   2:
     name: Puff_Valve_Client
