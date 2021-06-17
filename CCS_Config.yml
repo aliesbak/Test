@@ -41,7 +41,7 @@ LabViewClients:
               vdiv(v): 10
               offset: 0
             2:
-              name: window 3cx
+              name: window 3ccx
               vdiv(v): 5
               offset: 0
             3:
