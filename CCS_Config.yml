@@ -14,7 +14,7 @@ LabViewClients:
     type: labView
     databases: 1
     connectionString: 172.25.226.222
-    savePath: '/Data/TestData'
+    savePath: '/Data/TestData/'
     connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes:
