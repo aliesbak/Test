@@ -21,7 +21,7 @@ LabViewClients:
         1:
           name: polarimeter_01
           type: visa_lecroy
-          connectionString: "TCPIP0::172.25.226.126::inst0::INSTR"
+          connectionString: "TCPIP0::172.25.226.127::inst0::INSTR"
           #TIME_DIVS   = [
             # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
             # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
