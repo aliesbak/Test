@@ -19,7 +19,7 @@ LabViewClients:
       # Armable scopes - Downloadable scopes
       Scopes:
         1:
-          name: polarimeter_01
+          name: LeCroy_InterScope1
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.126::inst0::INSTR"
           #TIME_DIVS   = [
@@ -37,15 +37,15 @@ LabViewClients:
             - 3
           ChannelSettings:
             1:
-              name: Reto's Great
+              name: Channel 1
               vdiv(v): 10
               offset: 0
             2:
-              name: window 3ccx
+              name: Channel 2
               vdiv(v): 5
               offset: 0
             3:
-              name: Todd's Great
+              name: Channel 3
               vdiv(v): 44
               offset: 0
   2:
