@@ -14,7 +14,7 @@ LabViewClients:
     type: labView
     databases: 1
     connectionString: 172.25.226.222
-    savePath: '/Data/ccs_utf' # '/Data/Pi3Data' #'/Data/ccs_utf' #'C:\Users\ali.esbak\Desktop\PythonDAQ\Data'
+    savePath: 'C:\Users\ali.esbak\Desktop\PythonDAQ\Data' #'/Data/ccs_utf'
     connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes:
