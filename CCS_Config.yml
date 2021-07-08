@@ -30,7 +30,9 @@ LabViewClients:
           timeDiv(s): 2MS
           memSize: 700K
           triggerType: External
-          triggerLevel: 12
+          triggerLevel(mV): 600
+          triggerDelay(s): 0.0
+          triggerReference: Digitizer Timing
           activeChannels:
             - 1
             - 2
