@@ -37,18 +37,23 @@ LabViewClients:
             - 1
             - 2
             - 3
+            - 4
           ChannelSettings:
             1:
-              name: Channel 1
+              name: IFxxx_HeNe_refINTERSCOPE1
               vdiv(v): 10
               offset: 0
             2:
-              name: Channel 2
-              vdiv(v): 5
+              name: IF239_HeNe
+              vdiv(v): 10
               offset: 0
             3:
-              name: Channel 3
-              vdiv(v): 44
+              name: IF239_CO2
+              vdiv(v): 10
+              offset: 0
+            4:
+              name: IFxxx_CO2_refINTERSCOPE1
+              vdiv(v): 10
               offset: 0
   2:
     name: Puff_Valve_Client
