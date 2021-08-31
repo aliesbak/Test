@@ -13,7 +13,7 @@ LabViewClients:
     active: True
     type: labView
     databases: 1
-    connectionString: 172.25.226.146
+    connectionString: 172.25.226.222
     savePath: '/Data/Pi3Data'
     connectedDevices:
       # Armable scopes - Downloadable scopes
@@ -21,7 +21,7 @@ LabViewClients:
         1:
           name: LeCroy_InterScope1
           type: visa_lecroy
-          connectionString: "TCPIP0::172.25.226.126::inst0::INSTR"
+          connectionString: "TCPIP0::172.25.226.146::inst0::INSTR"
           #TIME_DIVS   = [
             # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
             # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
