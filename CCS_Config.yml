@@ -14,7 +14,7 @@ LabViewClients:
     type: labView
     databases: 1
     connectionString: 172.25.226.222
-    savePath: '/Data/Pi3Data'
+    savePath: '/nfs/expdata/PI3'
     connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes:
