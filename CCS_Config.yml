@@ -61,7 +61,7 @@ LabViewClients:
         2:
           name: LeCroy_InterScope2
           type: visa_lecroy
-          connectionString: "TCPIP0::172.25.226.186::inst0::INSTR"
+          connectionString: "TCPIP0::172.25.226.172::inst0::INSTR"
           #TIME_DIVS   = [
             # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
             # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
@@ -98,7 +98,7 @@ LabViewClients:
         3:
           name: LeCroy_InterScope3
           type: visa_lecroy
-          connectionString: "TCPIP0::172.25.226.188::inst0::INSTR"
+          connectionString: "TCPIP0::172.25.226.128::inst0::INSTR"
           #TIME_DIVS   = [
             # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
             # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
