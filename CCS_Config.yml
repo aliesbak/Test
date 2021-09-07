@@ -5,6 +5,9 @@ alterState:
   alter: Flase
   basePath_LabView_Scopes: ''
   broadcastMessage: False
+  debugBit1: False    # Send Real Messages?
+  debugBit2: False    # Print Debug Statements
+
   
 # Labview Client portion - ideally part of a bigger configuration file 
 LabViewClients:
@@ -55,80 +58,80 @@ LabViewClients:
               name: IFxxx_CO2_refINTERSCOPE1
               vdiv(v): 10
               offset: 0
-        # 2:
-        #   name: LeCroy_InterScope2
-        #   type: visa_lecroy
-        #   connectionString: "TCPIP0::172.25.226.186::inst0::INSTR"
-        #   #TIME_DIVS   = [
-        #     # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
-        #     # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
-        #     # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
-        #     # '1S','2S','5S','10S','20S','50S','100S']
-        #   timeDiv(s): 2MS
-        #   memSize: 700K
-        #   triggerType: External
-        #   triggerLevel(mV): 600
-        #   triggerDelay(s): 14MS
-        #   triggerReference: Digitizer Timing
-        #   activeChannels:
-        #     - 1
-        #     - 2
-        #     - 3
-        #     - 4
-        #   ChannelSettings:
-        #     1:
-        #       name: IFxxx_HeNe_refINTERSCOPE2
-        #       vdiv(v): 10
-        #       offset: 0
-        #     2:
-        #       name: IF221_HeNe
-        #       vdiv(v): 10
-        #       offset: 0
-        #     3:
-        #       name: IF258_HeNe
-        #       vdiv(v): 10
-        #       offset: 0
-        #     4:
-        #       name: IF276_HeNe
-        #       vdiv(v): 10
-        #       offset: 0
-        # 3:
-        #   name: LeCroy_InterScope3
-        #   type: visa_lecroy
-        #   connectionString: "TCPIP0::172.25.226.188::inst0::INSTR"
-        #   #TIME_DIVS   = [
-        #     # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
-        #     # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
-        #     # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
-        #     # '1S','2S','5S','10S','20S','50S','100S']
-        #   timeDiv(s): 2MS
-        #   memSize: 700K
-        #   triggerType: External
-        #   triggerLevel(mV): 600
-        #   triggerDelay(s): 14MS
-        #   triggerReference: Digitizer Timing
-        #   activeChannels:
-        #     - 1
-        #     - 2
-        #     - 3
-        #     - 4
-        #   ChannelSettings:
-        #     1:
-        #       name: IFxxx_CO2_refINTERSCOPE3
-        #       vdiv(v): 10
-        #       offset: 0
-        #     2:
-        #       name: IF276_CO2
-        #       vdiv(v): 10
-        #       offset: 0
-        #     3:
-        #       name: IF258_CO2
-        #       vdiv(v): 10
-        #       offset: 0
-        #     4:
-        #       name: IF221_CO2
-        #       vdiv(v): 10
-        #       offset: 0
+        2:
+          name: LeCroy_InterScope2
+          type: visa_lecroy
+          connectionString: "TCPIP0::172.25.226.186::inst0::INSTR"
+          #TIME_DIVS   = [
+            # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
+            # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
+            # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
+            # '1S','2S','5S','10S','20S','50S','100S']
+          timeDiv(s): 2MS
+          memSize: 700K
+          triggerType: External
+          triggerLevel(mV): 600
+          triggerDelay(s): 14MS
+          triggerReference: Digitizer Timing
+          activeChannels:
+            - 1
+            - 2
+            - 3
+            - 4
+          ChannelSettings:
+            1:
+              name: IFxxx_HeNe_refINTERSCOPE2
+              vdiv(v): 10
+              offset: 0
+            2:
+              name: IF221_HeNe
+              vdiv(v): 10
+              offset: 0
+            3:
+              name: IF258_HeNe
+              vdiv(v): 10
+              offset: 0
+            4:
+              name: IF276_HeNe
+              vdiv(v): 10
+              offset: 0
+        3:
+          name: LeCroy_InterScope3
+          type: visa_lecroy
+          connectionString: "TCPIP0::172.25.226.188::inst0::INSTR"
+          #TIME_DIVS   = [
+            # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
+            # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
+            # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
+            # '1S','2S','5S','10S','20S','50S','100S']
+          timeDiv(s): 2MS
+          memSize: 700K
+          triggerType: External
+          triggerLevel(mV): 600
+          triggerDelay(s): 14MS
+          triggerReference: Digitizer Timing
+          activeChannels:
+            - 1
+            - 2
+            - 3
+            - 4
+          ChannelSettings:
+            1:
+              name: IFxxx_CO2_refINTERSCOPE3
+              vdiv(v): 10
+              offset: 0
+            2:
+              name: IF276_CO2
+              vdiv(v): 10
+              offset: 0
+            3:
+              name: IF258_CO2
+              vdiv(v): 10
+              offset: 0
+            4:
+              name: IF221_CO2
+              vdiv(v): 10
+              offset: 0
 
   2:
     name: Puff_Valve_Client
