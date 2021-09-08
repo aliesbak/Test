@@ -72,9 +72,9 @@ LabViewClients:
           timeDiv(s): 5MS
           #MEM_SIZE   = [
             # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 700K
+          memSize: 7M
           triggerType: External
-          triggerLevel(mV): 600
+          triggerLevel(mV): 600mV
           triggerDelay(s): 14MS
           triggerReference: Digitizer Timing
           activeChannels:
@@ -111,9 +111,9 @@ LabViewClients:
           timeDiv(s): 5MS
           #MEM_SIZE   = [
             # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 700K
+          memSize: 70M
           triggerType: External
-          triggerLevel(mV): 600
+          triggerLevel(mV): 600mV
           triggerDelay(s): 14MS
           triggerReference: Digitizer Timing
           activeChannels:
