@@ -67,8 +67,8 @@ LabViewClients:
             # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
             # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
             # '1S','2S','5S','10S','20S','50S','100S']
-          timeDiv(s): 2MS
-          memSize: 700K
+          timeDiv(s): 5MS
+          memSize: 70M
           triggerType: External
           triggerLevel(mV): 600
           triggerDelay(s): 14MS
@@ -104,8 +104,8 @@ LabViewClients:
             # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
             # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
             # '1S','2S','5S','10S','20S','50S','100S']
-          timeDiv(s): 2MS
-          memSize: 700K
+          timeDiv(s): 5MS
+          memSize: 70M
           triggerType: External
           triggerLevel(mV): 600
           triggerDelay(s): 14MS
@@ -176,4 +176,3 @@ Databases:
         - name
         - value
         - status
-
