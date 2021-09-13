@@ -61,7 +61,7 @@ LabViewClients:
         #       vdiv(v): 10
         #       offset: 0
         1:
-          name: LeCroy_InterScope2
+          name: scint_144
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.172::inst0::INSTR"
           #TIME_DIVS   = [
@@ -74,7 +74,7 @@ LabViewClients:
             # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
           memSize: 14M
           triggerType: External
-          triggerLevel(mV): 600mV
+          triggerLevel(mV): 100MV
           triggerDelay(s): 14MS
           triggerReference: Digitizer Timing
           activeChannels:
@@ -84,23 +84,23 @@ LabViewClients:
             - 4
           ChannelSettings:
             1:
-              name: IFxxx_HeNe_refINTERSCOPE2
-              vdiv(v): 10
+              name: Scint_SC9
+              vdiv(v): 75MV
               offset: 0
             2:
-              name: IF221_HeNe
-              vdiv(v): 10
+              name: Scint_S9Zoom
+              vdiv(v): 2MV
               offset: 0
             3:
-              name: IF258_HeNe
-              vdiv(v): 10
+              name: Scint_SC10
+              vdiv(v): 50MV
               offset: 0
             4:
-              name: IF276_HeNe
-              vdiv(v): 10
+              name: Scint_SC10Zoom
+              vdiv(v): 2MV
               offset: 0
         2:
-          name: LeCroy_InterScope3
+          name: scint_146
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.128::inst0::INSTR"
           #TIME_DIVS   = [
@@ -113,7 +113,7 @@ LabViewClients:
             # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
           memSize: 14M
           triggerType: External
-          triggerLevel(mV): 600mV
+          triggerLevel(mV): 100MV
           triggerDelay(s): 14MS
           triggerReference: Digitizer Timing
           activeChannels:
@@ -123,20 +123,20 @@ LabViewClients:
             - 4
           ChannelSettings:
             1:
-              name: IFxxx_CO2_refINTERSCOPE3
-              vdiv(v): 10
+              name: Scint_SC13
+              vdiv(v): 75MV
               offset: 0
             2:
-              name: IF276_CO2
-              vdiv(v): 10
+              name: Scint_SC13Zoom
+              vdiv(v): 2MV
               offset: 0
             3:
-              name: IF258_CO2
-              vdiv(v): 10
+              name: Scint_SC16
+              vdiv(v): 20MV
               offset: 0
             4:
-              name: IF221_CO2
-              vdiv(v): 10
+              name: Scint_SC16Zoom
+              vdiv(v): 2MV
               offset: 0
 
   2:
