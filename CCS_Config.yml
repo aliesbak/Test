@@ -72,7 +72,7 @@ LabViewClients:
           timeDiv(s): 2MS
           #MEM_SIZE   = [
             # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 14M
+          memSize: 700K
           triggerType: External
           triggerLevel(mV): 100MV
           triggerDelay(s): 14MS
@@ -111,7 +111,7 @@ LabViewClients:
           timeDiv(s): 2MS
           #MEM_SIZE   = [
             # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 14M
+          memSize: 700K
           triggerType: External
           triggerLevel(mV): 100MV
           triggerDelay(s): 14MS
