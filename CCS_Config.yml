@@ -149,6 +149,18 @@ LabViewClients:
     connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes: Null
+      
+  3:
+  name: Test_TCP_LV_Client
+  active: True
+  type: labView
+  databases: 2
+  connectionString: 172.25.226.222
+  savePath: '/Data/ccs_utf'
+  connectedDevices:
+    # Armable scopes - Downloadable scopes
+    Scopes: Null
+
 
 Databases:
   1:
