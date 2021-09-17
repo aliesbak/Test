@@ -138,7 +138,6 @@ LabViewClients:
               name: Scint_SC16Zoom
               vdiv(v): 2MV
               offset: 0
-
   2:
     name: Puff_Valve_Client
     active: True
@@ -148,8 +147,7 @@ LabViewClients:
     savePath: '/Data/ccs_utf'
     connectedDevices:
       # Armable scopes - Downloadable scopes
-      Scopes: Null
-      
+      Scopes: Null  
   3:
   name: Test_TCP_LV_Client
   active: True
@@ -160,8 +158,6 @@ LabViewClients:
   connectedDevices:
     # Armable scopes - Downloadable scopes
     Scopes: Null
-
-
 Databases:
   1:
     name: plasmaInjector_3
