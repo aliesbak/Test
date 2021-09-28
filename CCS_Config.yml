@@ -119,15 +119,21 @@ LabViewClients:
           activeChannels:
             - 1
             - 2
+            - 3
           ChannelSettings:
             1:
               name: EXTLOOPVOLTAGE284
-              vdiv(v): 10
+              vdiv(v): 500MV
               offset: 0
             2:
               name: EXTLOOPVOLTAGE115
-              vdiv(v): 10
+              vdiv(v): 500MV
               offset: 0
+            3:
+              name: EXTLOOPVOLTAGE201
+              vdiv(v): 500MV
+              offset: 0
+
   2:
     name: Puff_Valve_Client
     active: True
