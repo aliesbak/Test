@@ -8,7 +8,6 @@ alterState:
   debugBit1: False    # Send Real Messages?
   debugBit2: False    # Print Debug Statements
 
-  
 # Labview Client portion - ideally part of a bigger configuration file 
 LabViewClients:
   1:
@@ -48,18 +47,33 @@ LabViewClients:
               name: Scint_SC9
               vdiv(v): 75MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
             2:
-              name: Scint_S9Zoom
+              name: Scint_SC9Zoom
               vdiv(v): 2MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
             3:
               name: Scint_SC10
               vdiv(v): 50MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
             4:
               name: Scint_SC10Zoom
               vdiv(v): 2MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
         2:
           name: scint_146
           type: visa_lecroy
@@ -87,18 +101,33 @@ LabViewClients:
               name: Scint_SC13
               vdiv(v): 75MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
             2:
               name: Scint_SC13Zoom
               vdiv(v): 2MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
             3:
               name: Scint_SC16
               vdiv(v): 20MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
             4:
               name: Scint_SC16Zoom
               vdiv(v): 2MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
         3:
           name: Vloop_1
           type: visa_lecroy
@@ -125,14 +154,25 @@ LabViewClients:
               name: EXTLOOPVOLTAGE284
               vdiv(v): 500MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
             2:
               name: EXTLOOPVOLTAGE115
               vdiv(v): 500MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
             3:
               name: EXTLOOPVOLTAGE201
               vdiv(v): 500MV
               offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
 
   2:
     name: Puff_Valve_Client
