@@ -159,7 +159,7 @@ LabViewClients:
               probe: 1.0
 
             2:
-              name: EXTLOOPVOLTAGE115
+              name: EXTLOOPVOLTAGE155
               vdiv(v): 500MV
               offset: 0
               coupling: D50
