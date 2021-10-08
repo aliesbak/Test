@@ -194,6 +194,28 @@ LabViewClients:
     connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes: Null
+      capBankFD:
+        database:
+          - capbank_alarms_events
+          - capbank_fault_detection
+        detectors:
+          1: 
+            name: pi3_CBS_relay
+            location: Bank_D
+            connectionString: 172.25.226.222
+            MACID: 000998AEBMW9
+            active: True
+            database:
+              - capbank_alarms_events
+              - capbank_fault_detection
+          2:
+            name: pi3_CBS_008
+            location: Bank_D
+            connectionString: 172.25.226.222
+            MACID: 000998AEBMW8
+            active: False
+
+  
 Databases:
   1:
     name: plasmaInjector_3
