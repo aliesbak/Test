@@ -205,9 +205,6 @@ LabViewClients:
             connectionString: 172.25.226.222
             MACID: 000998AEBMW9
             active: True
-            database:
-              - capbank_alarms_events
-              - capbank_fault_detection
           2:
             name: pi3_CBS_008
             location: Bank_D
