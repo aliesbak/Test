@@ -21,7 +21,61 @@ LabViewClients:
       # Armable scopes - Downloadable scopes
       Scopes:
         1:
-          name: scint_144
+          name: LeCroy_refINTERSCOPE1
+          type: visa_lecroy
+          connectionString: "TCPIP0::172.25.226.107::inst0::INSTR"
+          #TIME_DIVS   = [
+            # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
+            # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
+            # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
+            # '1S','2S','5S','10S','20S','50S','100S']
+          timeDiv(s): 2MS
+          # MEM_SIZE   = [
+          #   '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
+          memSize: 700K
+          triggerType: External
+          triggerLevel(mV): 600
+          triggerDelay(s): 14MS
+          triggerReference: Digitizer Timing
+          activeChannels:
+            - 1
+            - 2
+            - 3
+            - 4
+          ChannelSettings:
+            1:
+              name: IFxxx_CO2_refINTERSCOPE1
+              vdiv(v): 5
+              offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
+            2:
+              name: IF221_CO2
+              vdiv(v): 20M
+              offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
+            3:
+              name: IF239_CO2
+              vdiv(v): 20M
+              offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
+            4:
+              name: IF258_CO2
+              vdiv(v): 20M
+              offset: 0
+              coupling: D50 
+              BW: OFF
+              probe: 1.0
+        2:
+          name: LeCroy_refINTERSCOPE2
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.172::inst0::INSTR"
           #TIME_DIVS   = [
@@ -30,11 +84,56 @@ LabViewClients:
             # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
             # '1S','2S','5S','10S','20S','50S','100S']
           timeDiv(s): 2MS
-          #MEM_SIZE   = [
-            # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 14M
+          # MEM_SIZE   = [
+          #   '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
+          memSize: 700K
           triggerType: External
-          triggerLevel(mV): 100MV
+          triggerLevel(mV): 600
+          triggerDelay(s): 14MS
+          triggerReference: Digitizer Timing
+          activeChannels:
+            - 1
+            - 2
+            - 3
+          ChannelSettings:
+            1:
+              name: IFxxx_CO2_refINTERSCOPE2
+              vdiv(v): 2
+              offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
+            2:
+              name: IF267_CO2
+              vdiv(v): 20M
+              offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+
+            3:
+              name: IF276_CO2
+              vdiv(v): 20M
+              offset: 0
+              coupling: D50
+              BW: OFF
+              probe: 1.0
+        3:
+          name: LeCroy_refINTERSCOPE3
+          type: visa_lecroy
+          connectionString: "TCPIP0::172.25.226.106::inst0::INSTR"
+          #TIME_DIVS   = [
+            # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
+            # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
+            # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
+            # '1S','2S','5S','10S','20S','50S','100S']
+          timeDiv(s): 2MS
+          # MEM_SIZE   = [
+          #   '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
+          memSize: 700K
+          triggerType: External
+          triggerLevel(mV): 600
           triggerDelay(s): 14MS
           triggerReference: Digitizer Timing
           activeChannels:
@@ -44,38 +143,38 @@ LabViewClients:
             - 4
           ChannelSettings:
             1:
-              name: Scint_SC9
-              vdiv(v): 75MV
+              name: IFxxx_CO2_refINTERSCOPE2
+              vdiv(v): 2
               offset: 0
               coupling: D50
               BW: OFF
               probe: 1.0
+
             2:
-              name: Scint_SC9Zoom
-              vdiv(v): 2MV
+              name: IF221_HeNe
+              vdiv(v): 20M
               offset: 0
               coupling: D50
               BW: OFF
               probe: 1.0
 
             3:
-              name: Scint_SC10
-              vdiv(v): 50MV
+              name: IF239_HeNe
+              vdiv(v): 200M
               offset: 0
               coupling: D50
               BW: OFF
               probe: 1.0
-
             4:
-              name: Scint_SC10Zoom
-              vdiv(v): 2MV
+              name: IF258_HeNe
+              vdiv(v): 200M
               offset: 0
               coupling: D50
               BW: OFF
               probe: 1.0
 
-        2:
-          name: scint_146
+        4:
+          name: LeCroy_refINTERSCOPE4
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.128::inst0::INSTR"
           #TIME_DIVS   = [
@@ -84,91 +183,37 @@ LabViewClients:
             # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
             # '1S','2S','5S','10S','20S','50S','100S']
           timeDiv(s): 2MS
-          #MEM_SIZE   = [
-            # '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 14M
+          # MEM_SIZE   = [
+          #   '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
+          memSize: 700K
           triggerType: External
-          triggerLevel(mV): 100MV
+          triggerLevel(mV): 600
           triggerDelay(s): 14MS
           triggerReference: Digitizer Timing
           activeChannels:
             - 1
             - 2
             - 3
-            - 4
           ChannelSettings:
             1:
-              name: Scint_SC13
-              vdiv(v): 75MV
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-            2:
-              name: Scint_SC13Zoom
-              vdiv(v): 2MV
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-            3:
-              name: Scint_SC16
-              vdiv(v): 20MV
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-            4:
-              name: Scint_SC16Zoom
-              vdiv(v): 2MV
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-        3:
-          name: Vloop_1
-          type: visa_lecroy
-          connectionString: "TCPIP0::172.25.226.114::inst0::INSTR"
-          #TIME_DIVS   = [
-            # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
-            # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
-            # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
-            # '1S','2S','5S','10S','20S','50S','100S']
-          timeDiv(s): 5MS
-          # MEM_SIZE   = [
-          #   '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 700K
-          triggerType: External
-          triggerLevel(mV): 600
-          triggerDelay(s): 34MS
-          triggerReference: Digitizer Timing
-          activeChannels:
-            - 1
-            - 2
-            - 3
-          ChannelSettings:
-            1:
-              name: EXTLOOPVOLTAGE284
-              vdiv(v): 500MV
+              name: IFxxx_CO2_refINTERSCOPE4
+              vdiv(v): 1
               offset: 0
               coupling: D50
               BW: OFF
               probe: 1.0
 
             2:
-              name: EXTLOOPVOLTAGE155
-              vdiv(v): 500MV
+              name: IF267_HeNe
+              vdiv(v): 20M
               offset: 0
               coupling: D50
               BW: OFF
               probe: 1.0
 
             3:
-              name: EXTLOOPVOLTAGE201
-              vdiv(v): 500MV
+              name: IF276_CO2
+              vdiv(v): 20M
               offset: 0
               coupling: D50
               BW: OFF
