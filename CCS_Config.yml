@@ -218,6 +218,20 @@ LabViewClients:
               coupling: D50
               BW: OFF
               probe: 1.0
+    services:
+      BrightDetect:
+        configVarPath: '/nfs/expdata/PI3/Configuration/brightdetect_vars.yml'
+        active cams:
+          - capCam1
+          - capCam3
+          - capCam5
+        capCamConfigPath:
+          capCam1: '/nfs/expdata/PI3/Configuration/CapCam1.yml'
+          capCam3: '/nfs/expdata/PI3/Configuration/CapCam3.yml'
+          capCam4: '/nfs/expdata/PI3/Configuration/CapCam4.yml'
+          capCam5: '/nfs/expdata/PI3/Configuration/CapCam5.yml'
+
+
 
   2:
     name: Puff_Valve_Client
