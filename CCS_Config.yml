@@ -220,6 +220,7 @@ LabViewClients:
               probe: 1.0
     services:
       BrightDetect:
+        active: True
         configVarPath: '/nfs/expdata/PI3/Configuration/brightdetect_vars.yml'
         active cams:
           - capCam1
