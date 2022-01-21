@@ -21,7 +21,7 @@ LabViewClients:
       # Armable scopes - Downloadable scopes
       Scopes:
         1:
-          name: LeCroy_refINTERSCOPE1
+          name: LeCroy_INTERSCOPE1
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.107::inst0::INSTR"
           #TIME_DIVS   = [
@@ -75,7 +75,7 @@ LabViewClients:
               BW: OFF
               probe: 1.0
         2:
-          name: LeCroy_refINTERSCOPE2
+          name: LeCroy_INTERSCOPE2
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.172::inst0::INSTR"
           #TIME_DIVS   = [
@@ -120,7 +120,7 @@ LabViewClients:
               BW: OFF
               probe: 1.0
         3:
-          name: LeCroy_refINTERSCOPE3
+          name: LeCroy_INTERSCOPE3
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.106::inst0::INSTR"
           #TIME_DIVS   = [
@@ -174,7 +174,7 @@ LabViewClients:
               probe: 1.0
 
         4:
-          name: LeCroy_refINTERSCOPE4
+          name: LeCroy_INTERSCOPE4
           type: visa_lecroy
           connectionString: "TCPIP0::172.25.226.128::inst0::INSTR"
           #TIME_DIVS   = [
@@ -221,7 +221,7 @@ LabViewClients:
     services:
       BrightDetect:
         active: True
-        configVarPath: '/nfs/expdata/PI3/Configuration/brightdetect_vars.yml'
+        configVarPath: 'C:/Data/PI3/Configuration/brightdetect_vars.yml' #'/nfs/expdata/PI3/Configuration/brightdetect_vars.yml'
         active cams:
           - capCam1
           - capCam3
