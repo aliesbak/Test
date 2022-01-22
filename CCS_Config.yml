@@ -143,7 +143,7 @@ LabViewClients:
             - 4
           ChannelSettings:
             1:
-              name: IFxxx_CO2_refINTERSCOPE2
+              name: IFxxx_HeNe_refINTERSCOPE2
               vdiv(v): 2
               offset: 0
               coupling: D50
@@ -196,7 +196,7 @@ LabViewClients:
             - 3
           ChannelSettings:
             1:
-              name: IFxxx_CO2_refINTERSCOPE4
+              name: IFxxx_HeNe_refINTERSCOPE4
               vdiv(v): 1
               offset: 0
               coupling: D50
@@ -212,7 +212,7 @@ LabViewClients:
               probe: 1.0
 
             3:
-              name: IF276_CO2
+              name: IF276_HeNe
               vdiv(v): 20M
               offset: 0
               coupling: D50
