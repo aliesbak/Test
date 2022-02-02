@@ -221,7 +221,7 @@ LabViewClients:
     services:
       BrightDetect:
         active: True
-        configVarPath: '/nfs/expdata/PI3/Configuration/brightdetect_vars.yml' #'C:/Data/PI3/Configuration/brightdetect_vars.yml' #
+        configVarPath: 'C:/Data/PI3/Configuration/brightdetect_vars.yml' #'/nfs/expdata/PI3/Configuration/brightdetect_vars.yml'
         active cams:
           - capCam1
           - capCam3
