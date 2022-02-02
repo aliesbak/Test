@@ -221,16 +221,16 @@ LabViewClients:
     services:
       BrightDetect:
         active: True
-        configVarPath: 'C:/Data/PI3/Configuration/brightdetect_vars.yml' #'/nfs/expdata/PI3/Configuration/brightdetect_vars.yml'
+        configVarPath: '/nfs/expdata/PI3/Configuration/brightdetect_vars.yml' #'C:/Data/PI3/Configuration/brightdetect_vars.yml' #
         active cams:
           - capCam1
           - capCam3
           - capCam5
         capCamConfigPath:
-          capCam1: 'C:/Data/PI3/Configuration/CapCam1.yml' #'/nfs/expdata/PI3/Configuration/CapCam1.yml' #
-          capCam3: 'C:/Data/PI3/Configuration/CapCam3.yml' #'/nfs/expdata/PI3/Configuration/CapCam3.yml' #
-          capCam4: 'C:/Data/PI3/Configuration/CapCam4.yml' #'/nfs/expdata/PI3/Configuration/CapCam4.yml' #
-          capCam5: 'C:/Data/PI3/Configuration/CapCam5.yml' #'/nfs/expdata/PI3/Configuration/CapCam5.yml' #
+          capCam1: '/nfs/expdata/PI3/Configuration/CapCam1.yml' #'C:/Data/PI3/Configuration/CapCam1.yml' #
+          capCam3: '/nfs/expdata/PI3/Configuration/CapCam3.yml' #'C:/Data/PI3/Configuration/CapCam3.yml' #
+          capCam4: '/nfs/expdata/PI3/Configuration/CapCam4.yml' #'C:/Data/PI3/Configuration/CapCam4.yml' #
+          capCam5: '/nfs/expdata/PI3/Configuration/CapCam5.yml' #'C:/Data/PI3/Configuration/CapCam5.yml' #
 
 
 
