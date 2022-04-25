@@ -2,7 +2,7 @@
 # Date: 6/1/2021
 
 alterState:
-  alter: Flase
+  alter: False
   basePath_LabView_Scopes: ''
   broadcastMessage: False
   debugBit1: False    # Send Real Messages?
@@ -231,7 +231,43 @@ LabViewClients:
           capCam3: '/nfs/expdata/PI3/Configuration/CapCam3.yml' #'C:/Data/PI3/Configuration/CapCam3.yml' #
           capCam4: '/nfs/expdata/PI3/Configuration/CapCam4.yml' #'C:/Data/PI3/Configuration/CapCam4.yml' #
           capCam5: '/nfs/expdata/PI3/Configuration/CapCam5.yml' #'C:/Data/PI3/Configuration/CapCam5.yml' #
-
+        vars:
+          shotDrive: '/nfs/expdata/PI3'
+          lastshotFile: LastShot.txt
+          shotlogFile: ShotLog.txt
+          activeCapCams:    # List of active CapCams on Pi3
+            - CapCam1
+            - CapCam3
+            - CapCam4
+            - CapCam5
+          rowcolConfig:  #COnfiguration of rows/cols in CapCam files
+            rows:
+              - row12
+              - row11
+              - row10
+              - row09
+              - row08
+              - row07
+              - row06
+              - row05
+              - row04
+              - row03
+              - row02
+              - row01
+            cols:
+              - col01
+              - col02
+              - col03
+              - col04
+              - col05
+              - col06
+              - col07
+              - col08
+              - col09
+              - col10
+              - col11
+              - col12
+          minBrightness: 15       # min pixel brightness required for signal to be classified as "ON"
 
 
   2:
@@ -254,106 +290,6 @@ LabViewClients:
     connectedDevices:
       # Armable scopes - Downloadable scopes
       Scopes:
-        1:
-          name: LeCroy_INTERSCOPE1
-          type: visa_lecroy
-          connectionString: "TCPIP0::172.25.226.177::inst0::INSTR"
-          #TIME_DIVS   = [
-            # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
-            # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
-            # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
-            # '1S','2S','5S','10S','20S','50S','100S']
-          timeDiv(s): 2MS
-          # MEM_SIZE   = [
-          #   '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 700K
-          triggerType: External
-          triggerLevel(mV): 600
-          triggerDelay(s): 14MS
-          triggerReference: Digitizer Timing
-          activeChannels:
-            - 1
-            - 2
-            - 3
-            - 4
-          ChannelSettings:
-            1:
-              name: IFxxx_CO2_refINTERSCOPE1
-              vdiv(v): 5
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-            2:
-              name: IF221_CO2
-              vdiv(v): 20M
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-            3:
-              name: IF239_CO2
-              vdiv(v): 20M
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-            4:
-              name: IF258_CO2
-              vdiv(v): 20M
-              offset: 0
-              coupling: D50 
-              BW: OFF
-              probe: 1.0
-        2:
-          name: KeySight_Scope1
-          type: visa_keysight
-          connectionString: "TCPIP0::172.25.228.58::inst0::INSTR"
-          #TIME_DIVS   = [
-            # '1NS','2NS','5NS','10NS','20NS','50NS','100NS','200NS','500NS',
-            # '1US','2US','5US','10US','20US','50US','100US','200US','500US',
-            # '1MS','2MS','5MS','10MS','20MS','50MS','100MS','200MS','500MS',
-            # '1S','2S','5S','10S','20S','50S','100S']
-          timeDiv(s): 2MS
-          # MEM_SIZE   = [
-          #   '7K','14K','70K','140K','700K','1.4M','7M','14M','70M']
-          memSize: 10M
-          triggerType: External
-          triggerLevel(mV): 600
-          triggerDelay(s): 14MS
-          triggerReference: Digitizer Timing
-          activeChannels:
-            - 1
-            - 2
-            - 3
-          ChannelSettings:
-            1:
-              name: test_channel_01
-              vdiv(v): 2
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-            2:
-              name: test_channel_02
-              vdiv(v): 20M
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
-            3:
-              name: test_channel_03
-              vdiv(v): 20M
-              offset: 0
-              coupling: D50
-              BW: OFF
-              probe: 1.0
-
       capBankFD:
         database:
           - capbank_alarms_events
