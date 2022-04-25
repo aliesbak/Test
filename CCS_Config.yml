@@ -289,7 +289,7 @@ LabViewClients:
     savePath: '/Data/ccs_utf'
     connectedDevices:
       # Armable scopes - Downloadable scopes
-      Scopes:
+      Scopes: Null
       capBankFD:
         database:
           - capbank_alarms_events
